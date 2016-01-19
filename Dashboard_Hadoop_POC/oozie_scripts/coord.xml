@@ -1,0 +1,9 @@
+<coordinator-app name="coord" frequency="${coord:minutes(15)}" start="${startTime}" end="${endTime}" timezone="GMT-0700" xmlns="uri:oozie:coordinator:0.2">
+   <action>
+      <workflow>
+			<app-path>
+				${oozieProjectRootDir}/wf_inci_test.xml
+			</app-path>
+	  </workflow>
+   </action>
+</coordinator-app>

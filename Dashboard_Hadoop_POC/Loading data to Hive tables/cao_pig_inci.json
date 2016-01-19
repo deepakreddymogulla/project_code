@@ -1,0 +1,34 @@
+{"result":[{"skills":"","u_fcr":"false","u_closure_cause":"","u_itil_watch_list":"","urgency":"3","correlation_id":"","u_assignment_group":"","u_executive_summary__customer_":"","u_business_service":{"link":"https://aaaietest2.service-now.com/api/now/table/cmdb_ci/3abd6cda69a68d44d0b7b2ecddd78dfe","value":"3abd6cda69a68d44d0b7b2ecddd78dfe"},"group_list":"","u_req_item_number":"","u_global":"false","follow_up":"","closed_at":"2015-05-07 15:35:21","u_comments_and_work_notes":"","u_closure_subcause":"","delivery_task":"","u_application":"","parent":"","number":"INC0347425","u_reolved_by_l1":"false","closed_by":{"link":"https://aaaietest2.service-now.com/api/now/table/sys_user/6affb14754dc2800c7630d840ab71168","value":"6affb14754dc2800c7630d840ab71168"},"u_action_log":"","work_start":"","calendar_stc":"457","u_cube":"","category":"Admin","business_duration":"1970-01-01 00:00:00","u_accountable_owner":"","u_parent_incident":"","u_instructions":"","u_impacted_systems":"","correlation_display":"","due_date":"","u_logistics":"","knowledge":"false","made_sla":"true","u_business_stc_hour":"0","user_input":"","u_closure_ci":"","rfc":"","u_domain":"Production","u_number_of_affected_users":"1","upon_reject":"cancel","approval_history":"","u_impacted_users":"","u_template":"","u_services":"","u_claims_number":"","u_business_cost":"","work_notes":"","u_sub_cause":"","sys_id":"4767044f2bb3b900f5c852b319da1548","u_major_incident":"false","u_executive_timeline":"","u_reopen_count":"0","sys_created_by":"gy5rich","business_stc":"0","wf_activity":"","u_special_instructions":"","subcategory":"Account Lockout","u_request_id":"","contact_type":"phone","time_worked":"1970-01-01 00:00:00","comments":"","u_callback_number":"8778809713","u_bridge_notes":"","upon_approval":"proceed","location":{"link":"https://aaaietest2.service-now.com/api/now/table/cmn_location/5998deae2b2dfd00f5c852b319da1595","value":"5998deae2b2dfd00f5c852b319da1595"},"expected_start":"","close_notes":"Russell A Cost (AAA Customer) says he was transferred to Agency Support by someone in PSS.\r\nHe says he is calling because he is having trouble with managing his AAA account online.\r\nI apologized for the misinformation, and explained that I will make sure to get him to the correct dept to assist him.\r\nI called to E-Biz at 888-929-2911 and conferenced Russell on the line with Krista for further assistance.","impact":"3","u_resolved_by_l1":"false","u_outage":"false","u_members_impacted":"","u_incident_notification":"false","u_specified_other_sub_cause":"","u_notify_dl":"","u_closure_subcategory":"","priority":"4","description":"","sys_domain":{"link":"https://aaaietest2.service-now.com/api/now/table/sys_user_group/global","value":"global"},"u_month_sequence":"","u_month":"May 2015","delivery_plan":"","u_cbc_assigned_to":"","sys_mod_count":"1","u_closure_category":"","u_reopen":"false","u_causing_party":{"link":"https://aaaietest2.service-now.com/api/now/table/core_company/b0fef7aa69ac4900d0b7b2ecddd78d70","value":"b0fef7aa69ac4900d0b7b2ecddd78d70"},"sla_due":"","u_notify_distribution_list":"","sys_updated_on":"2015-05-11 07:00:43","u_outage_duration":"","work_end":"","u_event_investigation":"","u_caused_by_change_reason":"Not Caused by a Change","u_alt_callback_number":"","u_key_resources":"","activity_due":"","u_email":"DeAndre.Richard@csaa.com","company":"","active":"false","u_vendor":"","u_itsc_resolution":"false","assignment_group":{"link":"https://aaaietest2.service-now.com/api/now/table/sys_user_group/9697e5f0dcbb1c00c7634b2ec3492818","value":"9697e5f0dcbb1c00c7634b2ec3492818"},"u_resolved_by_lvl1":"false","u_vendor_ticket":"","caller_id":{"link":"https://aaaietest2.service-now.com/api/now/table/sys_user/6affb14754dc2800c7630d840ab71168","value":"6affb14754dc2800c7630d840ab71168"},"state":"7","approval_set":"","sys_created_on":"2015-05-07 15:35:21","u_configuration_item":"","reassignment_count":"0","u_timeline":"","opened_at":"2015-05-07 15:27:44","short_description":"Customer having trouble with managing his AAA account online","order":"","sys_updated_by":"system","notify":"1","u_alt_contact_number":"","problem_id":"","u_alt_contact_mgr":"","calendar_duration":"1970-01-01 00:07:37","u_cbc":"false","close_code":"By Service Desk/Follow-Up","u_user_name":"","approval":"not requested","caused_by":"","severity":"3","assigned_to":{"link":"https://aaaietest2.service-now.com/api/now/table/sys_user/6affb14754dc2800c7630d840ab71168","value":"6affb14754dc2800c7630d840ab71168"},"u_met_sla":"false","u_related_incidents":"0","u_source":"","cmdb_ci":{"link":"https://aaaietest2.service-now.com/api/now/table/cmdb_ci/3abd6cda69a68d44d0b7b2ecddd78dfe","value":"3abd6cda69a68d44d0b7b2ecddd78dfe"},"opened_by":{"link":"https://aaaietest2.service-now.com/api/now/table/sys_user/6affb14754dc2800c7630d840ab71168","value":"6affb14754dc2800c7630d840ab71168"},"sys_class_name":"incident","u_recovery_manager":"","watch_list":"","u_policy_number":"","escalation":"0","u_data_center":""}]}
+
+
+
+
+id   					-->	trim from number
+number					-->	number
+assignment_group		-->	assignment_group
+business_service		--> u_business_service
+configuration_item		-->	u_configuration_item
+approval				-->	approval
+closed					-->	closed_at				
+created					-->	sys_created_on									
+duration				--> business_duration
+month					-->	u_month
+opened					-->	opened_at
+priority				-->	priority
+severity				--> severity	
+short_description		--> short_description
+state					-->	state
+updated					-->	sys_updated_on
+user_name				-->	u_user_name
+sys_load_date			-->	"today()"
+open_month_year			-->	"concatenate 'open_month' + ' ' + 'open_year'"
+closed_month_year		-->	"concatenate 'close_month' + ' ' + 'close_year'"
+f_open_month_year		-->	"concatenate 'open_month' + ' ' + 'last two of open_year'"
+f_close_month_year		-->	"concatenate 'close_month' + ' ' + 'last two of close_year'"
+open_year				-->	"year from opened"
+open_month				-->	"month from opened"
+close_year				-->	"year from closed"
+close_month				-->	"month from closed"
+incident_duration		-->	"if closed is blank then '' else duration/(3600*24)"		
+i_age_bucket			-->	"incident_duration="","Open",IF((incident_duration>60),">60",IF(AND(incident_duration>30,incident_duration<=60),"31-60","0-30""
+s_age_bucket			-->	"incident_duration="","Open",IF((incident_duration>30),">30",IF(AND(incident_duration>14,incident_duration<=30),"15-30",IF(AND(incident_duration>7,incident_duration<=14),"08-14","0-7")))"

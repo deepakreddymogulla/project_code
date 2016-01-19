@@ -1,0 +1,63 @@
+-----------------------------------------------------------------
+Oozie Workflow Template
+-----------------------------------------------------------------
+
+<workflow-app name='wordcount-wf' xmlns="uri:oozie:workflow:0.1">
+    <start to='wordcount'/>
+    <action name='wordcount'>
+        <map-reduce>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.mapper.class</name>
+                    <value>org.myorg.WordCount.Map</value>
+                </property>
+                <property>
+                    <name>mapred.reducer.class</name>
+                    <value>org.myorg.WordCount.Reduce</value>
+                </property>
+                <property>
+                    <name>mapred.input.dir</name>
+                    <value>${inputDir}</value>
+                </property>
+                <property>
+                    <name>mapred.output.dir</name>
+                    <value>${outputDir}</value>
+                </property>
+            </configuration>
+        </map-reduce>
+        <ok to='end'/>
+        <error to='end'/>
+    </action>
+	<action name="myfirstpigjob">
+        <pig>
+            <job-tracker>foo:9001</job-tracker>
+            <name-node>bar:9000</name-node>
+            <prepare>
+                <delete path="${jobOutput}"/>
+            </prepare>
+            <configuration>
+                <property>
+                    <name>mapred.compress.map.output</name>
+                    <value>true</value>
+                </property>
+                <property>
+                    <name>oozie.action.external.stats.write</name>
+                    <value>true</value>
+                </property>
+            </configuration>
+            <script>/mypigscript.pig</script>
+            <argument>-param</argument>
+            <argument>INPUT=${inputDir}</argument>
+            <argument>-param</argument>
+            <argument>OUTPUT=${outputDir}/pig-output3</argument>
+        </pig>
+        <ok to="myotherjob"/>
+        <error to="errorcleanup"/>
+    </action>
+    <kill name='kill'>
+        <message>Something went wrong: ${wf:errorCode('wordcount')}</message>
+    </kill/>
+    <end name='end'/>
+</workflow-app>

@@ -1,0 +1,36 @@
+a = LOAD 'cmdo6.json' USING JsonLoader('result: {(skills:chararray, u_fcr:chararray, urgency:chararray, follow_up:chararray, closed_at:chararray, number:chararray, category:chararray, business_duration:chararray, u_closure_ci:chararray, u_domain:chararray, u_number_of_affected_users:chararray, upon_reject:chararray, approval_history:chararray, u_impacted_users:chararray, u_template:chararray, u_services:chararray, u_claims_number:chararray, u_business_cost:chararray, work_notes:chararray, u_sub_cause:chararray)}');
+
+a = LOAD '/user/root/hive_try/cmdo6.json' USING JsonLoader;
+
+a = LOAD '/user/root/hive_try/cmdo6.json' USING JsonLoader('result: {(skills:chararray, u_fcr:chararray, urgency:chararray, follow_up:chararray, closed_at:chararray, number:chararray, category:chararray, business_duration:chararray, u_closure_ci:chararray, u_domain:chararray, u_number_of_affected_users:chararray, upon_reject:chararray, approval_history:chararray, u_impacted_users:chararray, u_template:chararray, u_services:chararray, u_claims_number:chararray, u_business_cost:chararray, work_notes:chararray, u_sub_cause:chararray)}');
+
+a = LOAD 'cmdo6.json' USING JsonLoader('result: [(skills:chararray, u_fcr:chararray, urgency:chararray, follow_up:chararray, closed_at:chararray, number:chararray, category:chararray, business_duration:chararray, u_closure_ci:chararray, u_domain:chararray, u_number_of_affected_users:chararray, upon_reject:chararray, approval_history:chararray, u_impacted_users:chararray, u_template:chararray, u_services:chararray, u_claims_number:chararray, u_business_cost:chararray, work_notes:chararray, u_sub_cause:chararray)]');
+
+a = LOAD 'cmdo6.json' USING JsonLoader('result: {(skills:chararray), (u_fcr:chararray), (urgency:chararray), (follow_up:chararray), (closed_at:chararray), (number:chararray), (category:chararray), (business_duration:chararray), (u_closure_ci:chararray), (u_domain:chararray), (u_number_of_affected_users:chararray), (upon_reject:chararray), (approval_history:chararray), (u_impacted_users:chararray), (u_template:chararray), (u_services:chararray), (u_claims_number:chararray), (u_business_cost:chararray), (work_notes:chararray), (u_sub_cause:chararray)}');
+
+a = LOAD 'cmdo6.json' USING JsonLoader('result: (skills:chararray, u_fcr:chararray, urgency:chararray, follow_up:chararray, closed_at:chararray, number:chararray, category:chararray, business_duration:chararray, u_closure_ci:chararray, u_domain:chararray, u_number_of_affected_users:chararray, upon_reject:chararray, approval_history:chararray, u_impacted_users:chararray, u_template:chararray, u_services:chararray, u_claims_number:chararray, u_business_cost:chararray, work_notes:chararray, u_sub_cause:chararray)');
+
+a = LOAD 'cmdo6.json' USING JsonLoader('result: {{(skills:chararray)}, {(u_fcr:chararray)}, {(urgency:chararray)}, {(follow_up:chararray)}, {(closed_at:chararray)}, {(number:chararray)}, {(category:chararray)}, {(business_duration:chararray)}, {(u_closure_ci:chararray)}, {(u_domain:chararray)}, {(u_number_of_affected_users:chararray)}, {(upon_reject:chararray)}, {(approval_history:chararray)}, {(u_impacted_users:chararray)}, {(u_template:chararray)}, {(u_services:chararray)}, {(u_claims_number:chararray)}, {(u_business_cost:chararray)}, {(work_notes:chararray)}, {(u_sub_cause:chararray)}}');
+
+
+a = LOAD 'cmdo7.json' USING JsonLoader('skills:chararray, u_fcr:chararray, urgency:chararray, closed_at:chararray, number:chararray, category:chararray, business_duration:chararray, u_domain:chararray, u_number_of_affected_users:chararray');
+
+a = LOAD 'cmdo8.json' USING JsonLoader('skills:chararray, u_fcr:chararray, urgency:chararray, closed_at:chararray, number:chararray, category:chararray, business_duration:chararray, u_domain:chararray, u_number_of_affected_users:chararray');
+
+
+
+
+
+
+
+{
+"skills":"",
+"u_fcr":"false",
+"urgency":"3",
+"closed_at":"2015-01-09 17:50:41",
+"number":"INC0315917",
+"category":"Software",
+"business_duration":"1970-01-01 00:50:41",
+"u_domain":"Production",
+"u_number_of_affected_users":"1",
+}

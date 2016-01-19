@@ -1,0 +1,40 @@
+<workflow-app name="wf_inci_test" xmlns="uri:oozie:workflow:0.5" >
+
+<start to="pig_script_run"/>
+
+	<action name="pig_script_run">
+		<pig>
+			<job-tracker>${jobTracker}</job-tracker>
+	    	<name-node>${nameNode}</name-node>
+			<script>${pigScriptDir}/PigScript4.pig</script>
+		</pig>
+		<ok to="sendEmailSuccess"/>
+		<error to="sendEmailKill"/>
+	</action>
+
+	<action name='sendEmailSuccess'>
+		<email xmlns="uri:oozie:email-action:0.1">
+			<to>deepak.mogulla@csaa.com</to>
+			<subject>Status of workflow ${wf:id()}</subject>
+			<body>Oozie : Pig WF ${wf:id()} is completed successfully</body>
+		</email>
+		<ok to='end'/>
+		<error to='end'/>
+	</action>
+
+	<action name='sendEmailKill'>
+		<email xmlns="uri:oozie:email-action:0.1">
+			<to>deepak.mogulla@csaa.com</to>
+			<subject>Status of workflow ${wf:id()}</subject>
+			<body>Oozie : Pig WF ${wf:id()} had issues and was killed == > The error message is: ${wf:errorMessage(wf:lastErrorNode())}</body>
+		</email>
+		<ok to='end'/>
+		<error to='end'/>
+	</action>
+	
+	<kill name='fail'>
+		<message>Oozie : Pig WF == > Killed job due to error: ${wf:errorMessage(wf:lastErrorNode())}</message>
+	</kill>
+	
+	<end name='end'/>
+</workflow-app>

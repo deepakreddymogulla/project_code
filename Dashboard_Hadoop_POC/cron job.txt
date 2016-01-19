@@ -1,0 +1,19 @@
+To start a cron job	
+> /sbin/service crond start
+
+
+To stop a cron job
+> /sbin/service crond stop
+
+
+To add a cron job
+> crontab -e
+
+
+To check cron jobs for a user			
+> crontab -l
+
+
+Check crontab status
+> service crond status
+

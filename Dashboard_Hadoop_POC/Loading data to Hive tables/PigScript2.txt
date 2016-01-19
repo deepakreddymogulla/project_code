@@ -1,0 +1,6 @@
+REGISTER /root/hive_try_local/elephant-bird-core-4.1.jar;
+REGISTER /root/hive_try_local/elephant-bird-pig-4.1.jar;
+REGISTER /root/hive_try_local/elephant-bird-hadoop-compat-4.1.jar;
+
+a = LOAD 'cmdo8.json' USING com.twitter.elephantbird.pig.load.JsonLoader('-nestedLoad');
+describe a;
